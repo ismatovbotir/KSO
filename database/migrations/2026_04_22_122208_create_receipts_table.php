@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('receipts', function (Blueprint $table) {
             $table->id();
-            $table->string('no')->nullable();
+            $table->string('no');
+            $table->string('barcode');
             $table->string('type')->nullable();
             $table->decimal('total', 15, 2)->nullable();
             $table->text('data')->nullable();
             $table->string('status')->default('pending');
             $table->integer('retry_count')->default(0);
             $table->integer('code')->nullable();
-
-            
-
             $table->timestamps();
+            $table->unique(['no', 'barcode']);
         });
+
     }
 
     /**

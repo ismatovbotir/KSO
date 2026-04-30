@@ -78,7 +78,7 @@
 
     /* MIDDLE 60% */
     .middle {
-        height: 75%;
+        height: 90%;
         overflow: auto;
         padding: 10px;
     }
@@ -165,15 +165,7 @@
 
 <div class="container">
 
-    <!-- TOP -->
-    <div class="top">
-        <!-- Row 1: input + save -->
-        <livewire:receipt-server />
-        <!-- Row 2: action buttons -->
-       
-    </div>
-
-    <!-- MIDDLE -->
+   
    <livewire:receipt-list />
 
     <!-- BOTTOM -->

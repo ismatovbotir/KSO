@@ -1,10 +1,10 @@
  <div class="middle">
-         <div class="top-row">
+        {{--<div class="top-row">
             <button class="btn-update" onclick="showModal('success','Log Updated','The log has been updated successfully.')">Update Log</button>
             <button class="btn-log"    onclick="showModal('warning','Log Deleted','The log has been deleted.')">Delete Log</button>
             <button class="btn-upload" wire:click="submitReceipts">Upload All</button>
             <button class="btn-del-up" onclick="showModal('error','Deleted','All uploaded files have been removed.')">Delete Uploaded</button>
-        </div>
+        </div>--}}
         <div class="top-row" style="overflow: auto; max-height: 400px;">
              <table>
             <thead>
