@@ -90,7 +90,7 @@ class UploadReceipt extends Command
         } else {
             $receipt->update([
                 'status' => 'failed',
-                'code' => $code,
+                'code' => $code, 
             ]);
             $this->line("<error>✗</error> Receipt #{$receipt->id} failed permanently");
         }
